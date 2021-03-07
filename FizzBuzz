@@ -1,9 +1,17 @@
 for x in range(10):
-	if x % 5 == 0 and x % 3 == 0:
-  		print('FizzBuzz')
+	if x % 5 == 0 and x % 3 == 0 and x % 7 == 0:
+  		print('ThreeFiveSeven')
+	elif x % 5 == 0 and x % 3 == 0:
+		print('ThreeFive')
+	elif x % 3 == 0 and x % 7 == 0:
+		print('ThreeSeven')
+	elif x % 5 == 0 and x % 7 == 0:
+		print('FiveSeven')
  	elif x % 3 == 0:
-  		print('Fizz')
+  		print('Three')
 	elif x % 5 == 0:
-		print('Buzz')
+		print('Five')
+	elif x % 7 == 0:
+		print('Seven')
 	else:
 		print(x)
